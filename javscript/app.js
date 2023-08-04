@@ -55,6 +55,7 @@ function busqueda(lista, buscado) {
     return resultado
 }
 /***********************************************************************/
+
 function muestra(productoBuscado){
     const index = listaProductos.findIndex((producto) => producto.codigo === productoBuscado);
 
@@ -64,6 +65,7 @@ function muestra(productoBuscado){
                                          "\n Precio: " + listaProductos[index].precio);
 }
 /***********************************************************************/
+
 function buscaCompra() {
     let respuesta
     let index
@@ -110,8 +112,9 @@ function buscaCompra() {
             console.log("Producto NO Encontrado")
     }
 }
-    /***********************************************************************/
-function filtrar(){
+/***********************************************************************/
+
+    function filtrar(){
 
     let tipo = prompt("Ingrese el tipo de Producto a Filtrar: ").toLocaleLowerCase()
     const productosFiltrados = listaProductos.filter(producto => producto.tipo === tipo);
@@ -126,8 +129,7 @@ function filtrar(){
     }
 
 }
-
-     /***********************************************************************/
+/***********************************************************************/
 
 function verCarrito() {
     let bandera
@@ -162,7 +164,6 @@ function verCarrito() {
         }
     }
 }
-
 /***********************************************************************/
 
 function formaPago(subtotal, iva) {
@@ -201,6 +202,11 @@ function despedida() {
   
 }
 /***********************************************************************/
+    
     alert("\b Bienvenido a \n DELTA-GAMER");
+    
     menu()
+    
     despedida()
+
+/***********************************************************************/
